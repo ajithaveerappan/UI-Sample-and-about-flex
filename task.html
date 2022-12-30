@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .outer-container {
+        height: 100vh;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .first-container {
+        height: 90%;
+        width: 40%;
+        background-color: blue;
+        float: left;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        color:white;
+        padding:130px;
+        box-sizing: border-box;
+      }
+      .second-container {
+        height: 90%;
+        width: 40%;
+        background-color:whitesmoke;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+        
+    
+        
+        box-sizing: border-box;
+        gap: 10px;
+      }
+      .boredrline {
+        height: 10px;
+        width: 100%;
+        
+        background-color:brown;
+    
+      }
+      .text{
+       
+        color:slategrey;
+        letter-spacing: 0.01rem;
+      }
+      .para{
+        color:slategrey;
+        letter-spacing: 0.01rem;
+    
+      }
+      .namefield{
+        width:50%;
+        outline:none;
+        padding:12px;
+        border:1px solid slategrey;
+        border-radius:5px;
+       
+       
+      }
+      .name{
+        margin-right:210px;
+        color:slategrey;
+        
+      }
+      .password{
+        color:slategrey;
+        margin-right:200px;
+      }
+      .checkbox-wrapper{
+        display:flex;
+        flex-direction:row;
+        margin-right:90px;
+        
+      }
+      .checkbox-condition{
+        margin-left:10px;
+        color:gray;
+      }
+      .btn{
+        background-color: rgb(73, 73, 229);
+        color:white;
+        width:55%;
+        border:none;
+        padding:15px;
+        border-radius:5px;
+        margin-top:10px;
+      }
+      .line{
+        height:1px;
+         display:block;
+        background-color:slategrey;
+        width:100px;
+      }
+      
+      .wrapper{
+       display:flex;
+       flex-direction:row;
+       align-items: center;
+       gap:10px;
+    
+      }
+      .register{
+        padding:15px;
+        width:55%;
+        background-color:white;
+        box-shadow: 0 0 1px whitesmoke;
+        border-radius: 5px;
+        border:none;
+        display:flex;
+        flex-direction:row;
+        gap:40px;
+        align-items: center;
+      }
+      .image{
+        height:20px;
+        width:20px;
+      }
+      .inputfield-wrapper{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+       
+      }
+      .content-wrapper{
+        gap:10px;
+    
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+      }
+      .data{
+        line-height:23px;
+        letter-spacing: 0.01rem;
+      }
+      @media screen and (max-width:767px){
+        .outer-container{
+            height:100%;
+            width:100%;
+        }
+        .first-container{
+            width:100%;
+            height:100%;
+        }
+        .second-container{
+            width:100%;
+            height:100%;
+        }
+        .name{
+            margin-right:50px;
+        }
+        .password{
+            margin-right:32px;
+        }
+        .checkbox-wrapper{
+            margin:0;
+        }
+        .register{
+            width:100%;
+        }
+        .btn{
+            width:100%;
+        }
+        
+      }
+    
+    
+      
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="first-container">
+        <p class="data">
+            The passage experienced a surge in popularity during the 1960s when
+            Letraset use it on their dry-transfer sheets,and again during the 90s
+            as desktop publishers bundled the text with their software.
+        </p>
+      </div>
+      <div class="second-container">
+        <div class="content-wrapper">
+        <h2 class="heading">Register Individual Account!</h2>
+        <p class="text">
+          For the purpose of industry regulation,your </p>
+          <p class="para">details are required.</p>
+        </p>
+        </div>
+        <div class="borderline"></div>
+        <div class="inputfield-wrapper">
+        <label class="name">Your fullname*</label>
+        <input type="text" class="namefield" placeholder="Invictus Innocent">
+        <label class="name">Email address*</label>
+        <input type="text" class="namefield" placeholder="Enter email address">
+        <label class="password">Create password*</label>
+        <input type="text" class="namefield" placeholder="Enter password">
+        </div>
+        <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox">
+        <div class="checkbox-condition">I agree to terms and conditions</div>
+        </div>
+        <button class="btn">Register Account</button>
+        <div class="wrapper">
+        <div class="line"></div>
+        <p class="content">Or</p>
+        <div class="line"></div>
+
+      </div>
+      <button class="register">
+        <img src="googleicon.png" class="image">
+        <p class="image-content">Register with google</p>
+      </button>
+    </div>
+  </body>
+</html>
